@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // if(0){      //false
+      //   alert(1);
+      // }
+      //
+      // if(1){    //0을 제외한 나머지 정수값들은 모두 true
+      //   alert(2);
+      // }
+
+
+      //모두 true
+      if(!''){
+        alert('빈문자열')
+      }
+      if(!undefined){
+        alert('undefined');
+      }
+      var a;  //변수 선언했는데 초기화하지 않으면 undefined가 들어감
+      if(!a){
+        alert('값이 할당되지 않은 변수');
+      }
+      if(!null){
+        alert('null');
+      }
+      if(!NaN){
+        alert('NaN');
+      }
+      if(!(0/0)){
+        alert('0/0');
+      }
+
+
+    </script>
+  </body>
+</html>

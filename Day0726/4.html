@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+      <canvas id="myCanvas" width="600" height="400" style="border: 3px solid">
+      </canvas>
+      <script type ="text/javascript">
+        var ctx = document.getElementById("myCanvas");
+        var myContext = ctx.getContext("2d"); //캔버스의 드로잉 컨텍스트를 반환하는 함수. 드로잉에 필요한 속성과 함수를 가진 객체를 생성한다. 매개변수에는 2d, webgi 등이 있다.(webgi는 3d)
+
+        myContext.beginPath();  //패스 그리기 시작
+        myContext.moveTo(100,20);  //패스 시작점 지정
+        myContext.lineTo(40,120);  //패스 이동점 지정
+        myContext.lineTo(160,120);
+        myContext.fill();
+
+        myContext.moveTo(300,20);  //패스 시작점 지정
+        myContext.lineTo(200,60);  //패스 이동점 지
+        myContext.lineTo(200,120);
+        myContext.lineTo(400,120);
+        myContext.lineTo(400,60);
+        myContext.closePath();
+        myContext.stroke();   //패스 연결하기
+      </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+
+      //1번
+    // function setName(obj){
+    //   obj.name = "Nicholas";
+    // }
+    // var person = new Object();
+    // setName(person);
+    // alert(person.name);
+
+
+      //2번
+    function setName(obj){
+      obj.name = "Nicholas";
+      obj = new Object();
+      obj.name = "Greg";
+    }
+    var person = new Object();
+    setName(person);
+    alert(person.name);
+
+    </script>
+  </body>
+</html>

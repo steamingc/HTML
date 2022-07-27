@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+      function test(){
+        // var message = "hi"; //지역변수이기 때문에 에러가 뜬다
+        message = "hi";        //변수를 전역으로 정의하면 에러 사라짐
+      }
+      test();
+      alert(message);
+
+    </script>
+  </body>
+</html>

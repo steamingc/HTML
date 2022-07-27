@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+
+      function sayHi(){
+        alert(arguments.length);
+        if(arguments.length==1){
+          alert(arguments[0]);
+        }else if(arguments.length==2){
+          alert(arguments[0] + ' : ' + arguments[1]);
+        }
+      }
+
+      sayHi();            //0
+      sayHi('seungjin');  //1, seungjin
+      sayHi('seungjin', 'kildong'); //2, seungjin : kildong
+
+
+    </script>
+  </body>
+</html>
